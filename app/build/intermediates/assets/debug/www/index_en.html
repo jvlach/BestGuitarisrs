@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>71+1 best guitarists of rock</title>
+<style>
+.mymaindiv { color:#000000; font-weight:bold;background-color:#F8F8F8;vertical-align: bottom;}
+.mymaindivred { color:#C00000 ;font-weight:bold;}
+.mymaindivyellow { color:#FFFF99 ;font-weight:bold;}
+.myvideolink{background:#000000;}
+.myfooter{position:fixed;
+bottom:0px;
+}
+
+.mywrapper{width=100%;right:0px;left:0px}
+</style>
+<link href="jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script>
+
+//ads:
+//place our admob ad unit id here
+var admobid = {};
+if( /(android)/i.test(navigator.userAgent) ) {
+admobid = { // for Android
+  banner: 'ca-app-pub-9423408255527730/2146869400',
+  interstitial: 'ca-app-pub-9423408255527730/1301803003'
+};
+}
+
+
+function initAd(){
+  AdMob.setOptions({
+    adSize: 'SMART_BANNER',
+    // width: integer, // valid when set adSize 'CUSTOM'
+    // height: integer, // valid when set adSize 'CUSTOM'
+    position: AdMob.AD_POSITION.BOTTOM_CENTER,
+    // offsetTopBar: false, // avoid overlapped by status bar, for iOS7+
+    bgColor: 'black', // color name, or '#RRGGBB'
+    // x: integer,    // valid when set position to 0 / POS_XY
+    // y: integer,    // valid when set position to 0 / POS_XY
+    isTesting: false, // set to true, to receiving test ad for testing purpose
+    // autoShow: true // auto show interstitial ad when loaded, set to false if prepare/show
+  });
+}
+  
+
+  function createSelectedBanner(){
+  	//alert( 'admob plugin ' );
+    AdMob.createBanner({
+      adId: admobid.banner,
+      overlap: false,
+      offsetTopBar: true,
+      adSize: 'SMART_BANNER',
+      position: 8,
+    });
+  }
+
+  function showBannerAtPosition(){
+    AdMob.showBanner( 8 );
+  }
+
+  //ads:END
+  
+$(document).ready(function(){
+	$("#page").css("background-image", "url(images/guitar.jpg)");
+	$("#page3menu").css("background-image", "url(images/guitar.jpg)");
+	
+	$("#page4menu").css("background-image", "url(images/guitar2.jpg)");
+	$("#page71").css("background-image", "url(images/page71.jpg)");
+	$("#page1").css("background-image", "url(images/page1.jpg)");
+	$("#page2").css("background-image", "url(images/page2.jpg)");
+	$("#page3").css("background-image", "url(images/page3.jpg)");
+	
+	$("#page4").css("background-image", "url(images/page4.jpg)");
+	$("#page5").css("background-image", "url(images/page5.jpg)");
+	$("#page6").css("background-image", "url(images/page6.jpg)");
+	$("#page7").css("background-image", "url(images/page7.jpg)");
+	$("#page8").css("background-image", "url(images/page8.jpg)");
+	$("#page9").css("background-image", "url(images/page9.jpg)");
+	$("#page10").css("background-image", "url(images/page10.jpg)");
+	$("#page11").css("background-image", "url(images/page11.jpg)");
+	$("#page12").css("background-image", "url(images/page12.jpg)");
+	$("#page13").css("background-image", "url(images/page13.jpg)");
+	$("#page14").css("background-image", "url(images/page14.jpg)");
+	$("#page15").css("background-image", "url(images/page15.jpg)");
+	$("#page16").css("background-image", "url(images/page16.jpg)");
+	$("#page17").css("background-image", "url(images/page17.jpg)");
+	$("#page18").css("background-image", "url(images/page18.jpg)");
+	$("#page19").css("background-image", "url(images/page19.jpg)");
+	$("#page20").css("background-image", "url(images/page20.jpg)");
+	
+	$("#page21").css("background-image", "url(images/page21.jpg)");
+	$("#page22").css("background-image", "url(images/page22.jpg)");
+	$("#page23").css("background-image", "url(images/page23.jpg)");
+	$("#page24").css("background-image", "url(images/page24.jpg)");
+	$("#page25").css("background-image", "url(images/page25.jpg)");
+	$("#page26").css("background-image", "url(images/page26.jpg)");
+	$("#page27").css("background-image", "url(images/page27.jpg)");
+	$("#page28").css("background-image", "url(images/page28.jpg)");
+	$("#page29").css("background-image", "url(images/page29.jpg)");
+	$("#page30").css("background-image", "url(images/page30.jpg)");
+	
+	$("#page31").css("background-image", "url(images/page31.jpg)");
+	$("#page32").css("background-image", "url(images/page32.jpg)");
+	$("#page33").css("background-image", "url(images/page33.jpg)");
+	$("#page34").css("background-image", "url(images/page34.jpg)");
+	$("#page35").css("background-image", "url(images/page35.jpg)");
+	$("#page36").css("background-image", "url(images/page36.jpg)");
+	$("#page37").css("background-image", "url(images/page37.jpg)");
+	$("#page38").css("background-image", "url(images/page38.jpg)");
+	$("#page39").css("background-image", "url(images/page39.jpg)");
+	$("#page40").css("background-image", "url(images/page40.jpg)");
+	
+	$("#page41").css("background-image", "url(images/page41.jpg)");
+	$("#page42").css("background-image", "url(images/page42.jpg)");
+	$("#page43").css("background-image", "url(images/page43.jpg)");
+	$("#page44").css("background-image", "url(images/page44.jpg)");
+	$("#page45").css("background-image", "url(images/page45.jpg)");
+	$("#page46").css("background-image", "url(images/page46.jpg)");
+	$("#page47").css("background-image", "url(images/page47.jpg)");
+	$("#page48").css("background-image", "url(images/page48.jpg)");
+	$("#page49").css("background-image", "url(images/page49.jpg)");
+	$("#page50").css("background-image", "url(images/page50.jpg)");
+	
+	$("#page51").css("background-image", "url(images/page51.jpg)");
+	$("#page52").css("background-image", "url(images/page52.jpg)");
+	$("#page53").css("background-image", "url(images/page53.jpg)");
+	$("#page54").css("background-image", "url(images/page54.jpg)");
+	$("#page55").css("background-image", "url(images/page55.jpg)");
+	$("#page56").css("background-image", "url(images/page56.jpg)");
+	$("#page57").css("background-image", "url(images/page57.jpg)");
+	$("#page58").css("background-image", "url(images/page58.jpg)");
+	$("#page59").css("background-image", "url(images/page59.jpg)");
+	$("#page60").css("background-image", "url(images/page60.jpg)");
+	
+	$("#page61").css("background-image", "url(images/page61.jpg)");
+	$("#page62").css("background-image", "url(images/page62.jpg)");
+	$("#page63").css("background-image", "url(images/page63.jpg)");
+	$("#page64").css("background-image", "url(images/page64.jpg)");
+	$("#page65").css("background-image", "url(images/page65.jpg)");
+	$("#page66").css("background-image", "url(images/page66.jpg)");
+	$("#page67").css("background-image", "url(images/page67.jpg)");
+	$("#page68").css("background-image", "url(images/page68.jpg)");
+	$("#page69").css("background-image", "url(images/page69.jpg)");
+	$("#page70").css("background-image", "url(images/page70.jpg)");
+	
+	$("#page72").css("background-image", "url(images/page72.jpg)");//jj cale
+	
+	//$("#footer1").css("position", "fixed");
+	//$("#footer1").css("bottom", "0");
+	//$.mobile.activePage.children('[data-role="footer"]').css("position", "fixed");
+	//$.mobile.activePage.children('[data-role="footer"]').css("bottom", "0");
+	
+	//to change all at once:
+	//$("[id^=footer]").css("position", "fixed");
+	//$("[id^=footer]").css("bottom", "0");
+	
+	$("[id^=wrapper]").css("position", "fixed");
+	$("[id^=wrapper]").css("bottom", "0");
+	
+	
+	$("#comment").css("background", "#F8F8F8");
+	$.mobile.page.prototype.options.backBtnText = "Back";
+	
+	$(".extLink").click( function(event){
+		event.preventDefault();
+		var elem = $(this);
+        var url = elem.attr('href');
+        if (url.indexOf('http://') !== -1) {
+           //alert("kookoo");
+        	var ref = window.open(url, '_system');
+        }
+		//var ref = window.open('http://www.stackoverflow.com/', '_system')
+		//on('click'
+	});
+	
+});
+
+//$("#page3").live( 'pageinit',function(event){
+//	$.mobile.activePage.children('[data-role="footer"]').css("position", "fixed");
+//	$.mobile.activePage.children('[data-role="footer"]').css("bottom", "0");
+//	});
+
+ function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+        
+      //ads:
+        if (! AdMob) { return; }
+
+        initAd();
+
+        // display a banner at startup
+        createSelectedBanner();
+        showBannerAtPosition();
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		if($.mobile.activePage.is('#page')){
+      setTimeout( function() {navigator.app.exitApp();}, 100 );
+
+    }
+    else {
+        setTimeout( function() {$.mobile.changePage("#page");}, 100 );
+
+    }
+    }
+
+</script>
+</head>
+<body  onload="onLoad()" >
+
+<div id="page" data-role="page" data-theme="b">
+<p></p>
+	<div data-role="header">
+		Best guitarists of rock
+	</div>
+    <p></p>
+
+	<div data-role="content">
+		<ul data-role="listview">
+			<li><a href="#page71">From 1 to 72</a></li>
+
+            <li><a href="#page3menu">List</a></li>
+      
+			<li><a href="#page4menu">Other lists</a></li>
+		</ul>
+	</div>
+    <br>
+    <div data-role="collapsible-set">
+      <div id="comment" data-role="collapsible" data-theme="c">
+        <h3>Comment</h3>
+        <p>This list is solely based on my personal musical preferences.</p>
+      </div>
+      
+    </div>
+
+	<!--  <div data-role="footer" id="footer1">
+		<h4> <a href="http://jv-mobile.blogspot.gr/">Yannis Βλάχος</a></h4>
+	</div>-->
+</div>
+
+
+
+<div data-role="page" id="page3menu" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>The list:</h1>
+	</div>
+    <!-- <p><div><a href="#page" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a></div></p> -->
+	<div data-role="content">
+		<ol data-role="listview">
+			<li><a href="#page71">Jimi Hendrix</a></li>
+<li><a href="#page1">Chuck Berry</a></li>
+<li><a href="#page2">Jeff Beck</a></li>
+<li><a href="#page3">Eric Clapton</a></li>
+<li><a href="#page4">Rory Gallagher</a></li>
+<li><a href="#page5">Jimmy Page</a></li>
+<li><a href="#page6">Santana</a></li>
+<li><a href="#page7">Ritchie Blackmore</a></li>
+<li><a href="#page8">Brian May</a></li>
+<li><a href="#page9">Dave Davies</a></li>
+<li><a href="#page10">Frank Zappa</a></li>
+<li><a href="#page11">Mark Knopfler</a></li>
+<li><a href="#page12">Tony Iommi</a></li>
+<li><a href="#page13">Dave Gilmour</a></li>
+<li><a href="#page14">Robby Krieger</a></li>
+<li><a href="#page15">Muddy Waters</a></li>
+<li><a href="#page16">Eddie Van Halen</a></li>
+<li><a href="#page17">Robert Johnson</a></li>
+<li><a href="#page18">Mick Ronson</a></li>
+<li><a href="#page19">Duane Allman</a></li>
+<li><a href="#page20">Pete Townshend</a></li>
+<li><a href="#page21">Angus Young</a></li>
+<li><a href="#page22">Scotty Moore</a></li>
+<li><a href="#page23">Rhandy Roads</a></li>
+<li><a href="#page24">Alex Lifeson</a></li>
+<li><a href="#page25">Bo Diddley</a></li>
+<li><a href="#page26">Eddie Hazel</a></li>
+<li><a href="#page27">Buddy Holly</a></li>
+<li><a href="#page28">John Lee Hooker</a></li>
+<li><a href="#page29">Jerry Garcia</a></li>
+<li><a href="#page30">Yngwie Malmsteen</a></li>
+<li><a href="#page31">Ron Asheton</a></li>
+<li><a href="#page32">Allen Collins-Gary Rossington</a></li>
+<li><a href="#page33">Stevie Ray Vaughan</a></li>
+<li><a href="#page34">Yannis Spathas</a></li>
+<li><a href="#page35">John Sykes</a></li>
+<li><a href="#page72">JJ Cale</a></li>
+<li><a href="#page36">Slash</a></li>
+<li><a href="#page37">Jack White</a></li>
+<li><a href="#page38">Prince</a></li>
+<li><a href="#page39">B.B. King</a></li>
+<li><a href="#page40">Ry Cooder</a></li>
+<li><a href="#page41">Mike Campbell</a></li>
+<li><a href="#page42">Steve Jones</a></li>
+<li><a href="#page43">Kirk Hammett</a></li>
+<li><a href="#page44">Johnny Marr</a></li>
+<li><a href="#page45">The Edge</a></li>
+<li><a href="#page46">Mike Bloomfield</a></li>
+<li><a href="#page47">Bonnie Raitt</a></li>
+<li><a href="#page48">Robert Fripp</a></li>
+<li><a href="#page49">Kurt Cobain</a></li>
+<li><a href="#page50">John Frusciante</a></li>
+<li><a href="#page51">Peter Green</a></li>
+<li><a href="#page52">Gary Moore</a></li>
+<li><a href="#page53">Gus G</a></li>
+<li><a href="#page54">Adrian Smith-Dave Murray</a></li>
+<li><a href="#page55">Lindsey Buckingham</a></li>
+<li><a href="#page56">Uli Roth</a></li>
+<li><a href="#page57">Andy Summers</a></li>
+<li><a href="#page58">Joe Perry</a></li>
+<li><a href="#page59">Jan Akkerman</a></li>
+<li><a href="#page60">Johnny Ramone</a></li>
+<li><a href="#page61">Zakk Wylde</a></li>
+<li><a href="#page62">Michael Schenker</a></li>
+<li><a href="#page63">Robbie Robertson</a></li>
+<li><a href="#page64">Marty Friedman</a></li>
+<li><a href="#page65">Glenn Tipton-K.K. Downing</a></li>
+<li><a href="#page66">Dimebag Darrell</a></li>
+<li><a href="#page67">Tom Morello</a></li>
+<li><a href="#page68">Tommy Bolin</a></li>
+<li><a href="#page69">Billy Gibbons</a></li>
+<li><a href="#page70">Lita Ford</a></li>
+
+		</ol>
+	</div>
+    <p><div><a href="#page" data-icon="arrow-l" data-role="button" data-theme="e">Back</a></div></p>
+	<!--  <div data-role="footer" id="footer1">
+		<h4> <a href="http://jv-mobile.blogspot.gr/">Yannis Βλάχος</a></h4>
+	</div>-->
+</div>
+
+<div data-role="page" id="page4menu" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Other lists:</h1>
+	</div>
+    <!-- <p><div><a href="#page" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a></div></p> -->
+	<div data-role="content">
+		<ul data-role="listview" data-theme="c">
+        <li><a href="http://www.rollingstone.com/music/lists/100-greatest-guitarists-20111123">Rolling Stone: 100 Greatest Guitarists of all time</a></li>
+        <li><a href="http://www2.gibson.com/News-Lifestyle/Features/en-us/Top-50-Guitarists-528.aspx">Gibson.com: Top 50 Guitarists of All Time</a></li>
+			<li><a href="http://www.gigwise.com/news/40852/The-50-Greatest-Guitarists-Ever">GigWise: The 50 Greatest Guitarists... Ever!</a></li>
+
+            <li><a href="http://www.digitaldreamdoor.com/pages/best_guitar-all.html">Digitaldreamdoor: 100 Greatest Guitarists (All Genres)</a></li>
+
+		</ul>
+	</div>
+    <p><div><a href="#page" data-icon="arrow-l" data-role="button" data-theme="e">Back</a></div></p>
+	<!--  <div data-role="footer" id="footer1">
+		<h4> <a href="http://jv-mobile.blogspot.gr/">Yannis Βλάχος</a></h4>
+	</div>-->
+</div>
+
+
+
+
+<!--  pages:-->
+
+<div data-role="page" id="page71" data-add-back-btn="true"><!-- style="FILTER: alpha(opacity=10);opacity:0.1;" -->
+
+	<div data-role="header">
+		<h1>1.Jimi Hendrix</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71" class="mymaindiv" data-id="my"  style="FILTER: alpha(opacity=50);opacity:0.5;">
+		He is generally considered the best rock guitarist ever. That’s right, since his guitar sounds like coming from another planet (even today). Unfortunately, he died very young.
+        
+        
+        
+	</div>
+	  <div data-role="footer" id="footer1" data-theme="d">
+	 <div  align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=EX5phFmbrU8" data-role="button" class="extLink">Hear My Train A Comin'</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=TLV4_xaYynY" data-role="button" class="extLink">All Along The Watchtower</a>
+        </div> 
+		<div align="center"><a href="#page1" data-icon="arrow-r" data-role="button" data-theme="e" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></div>
+	</div>
+	</div>
+	
+</div>
+
+<div data-role="page" id="page1" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>2.Chuck Berry</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my"  style="FILTER: alpha(opacity=50);opacity:0.5;">
+	
+		The first one to play real rock, away from the blues. He started everything and wrote some great songs. Not the easiest person to work with (so they say) but a great guitarist.
+		
+        <!--  Listen:<BR>
+        <a href="http://www.youtube.com/watch?v=6ofD9t_sULM" class="myvideolink">Johnny B. Goode</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=p0HmFr7mPsk" class="myvideolink">Maybellene</a>
+        
+        -->
+        
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=I8JULmUlGDA" data-role="button" class="extLink">Johnny B. Goode</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=8RAfxiyMKAk" data-role="button" class="extLink">Maybellene</a>
+        </div>
+		<div align="center"><a href="#page71" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page2" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></div>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>3.Jeff Beck</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+		He started earlier that Clapton, but was never a super star. He did a lot of innovative and different things. He kept making great music (not very popular though), when others had no ideas anymore.  
+        
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=Vuj5toLeyY8" data-role="button" class="extLink">Beck's Bolero</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=5ZBeerUD-zc" data-role="button" class="extLink">Futher On Up The Road (με Eric Clapton)</a>
+        </div>
+		<div align="center"><a href="#page1" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page3" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></div>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page3" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>4.Eric Clapton</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+		Great guitarist, especially during his first years. He loves the blues and used them to evolve the rock sound.  Also, he is the one that, more or less, introduced us to JJ Cale and Bob Marley.
+        
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=oDs2Bkq6UU4" data-role="button" class="extLink">While My Guitar Gently Weeps</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=8OLK_HSyy1U" data-role="button" class="extLink">Crossroads (1968)</a>
+        </div>
+		<h4><a href="#page2" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page4" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page4" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>5.Rory Gallagher</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+		Another great guitarist, he never became a star mainly because he didn’t want to. All of his work is great. Unfortunately, he died rather young.   
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=gyHymAxUVrc" data-role="button" class="extLink">Moonchild</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=WlEQOmGISHM" data-role="button" class="extLink">Philby</a>
+        </div>
+		<h4><a href="#page3" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page5" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page5" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>6.Jimmy Page</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+		Don’t need to say a lot for Jimmy Page. He did great things (mainly) with Led Zeppelin.  
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=JOemwDVBlqE" data-role="button" class="extLink">Stairway to Heaven</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=73dvrir5kig" data-role="button" class="extLink">Kashmir</a>
+        </div>
+		<h4><a href="#page4" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page6" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page6" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>7.Santana</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+		He brought the latin sound  in rock. Very capable guitarist, with a unique, sweet sound. 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=95kCv10duFw" data-role="button" class="extLink">Black Magic Woman</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=WzSayxVM_E0" data-role="button" class="extLink">Samba Pa Ti</a>
+        </div>
+		<h4><a href="#page5" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page7" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page7" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>8.Ritchie Blackmore</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	Great soloist and one of the first contributors to the neo-classical guitar genre.  He was fantastic both with Deep Purple and with Rainbow. 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=AUtHC9L2CdI" data-role="button" class="extLink">Highway Star</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=dqM5L5JQseI" data-role="button" class="extLink">Lazy</a>
+        </div>
+		<h4><a href="#page6" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page8" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	
+	</div>
+</div>
+
+
+
+<div data-role="page" id="page8" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>9.Brian May</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	 He has a unique sound, melodic but also hard when it’s needed. Great work with Queen, did some good stuff as a solo artist too.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=qu7mWsLCfiI" data-role="button" class="extLink">Crazy Little Thing Called Love</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=T8Rfb1Jtmic" data-role="button" class="extLink">Stone Cold Crazy</a>
+        </div>
+		<h4><a href="#page7" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page9" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+
+
+<div data-role="page" id="page9" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>10.Dave Davies</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Kinks are one of the groups that laid the foundations of hard rock. Dave Davies was one of the main reasons for that.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=-2GmzyeeXnQ" data-role="button" class="extLink">You Really Got Me</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=F4DV-5d6a5g" data-role="button" class="extLink">All Day and All of the Night</a>
+        </div>
+		<h4><a href="#page8" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page10" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+
+
+<div data-role="page" id="page10" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>11.Frank Zappa</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Incredibly talented and outstanding personality. A great guitarist, among other things.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=FzZohsi0nXc" data-role="button" class="extLink">Black Napkins</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=Dp6LT2MdaPI" data-role="button" class="extLink">Cosmik Debris</a>
+        </div>
+		<h4><a href="#page9" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page11" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="page11" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>12.Mark Knopfler</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Unique, melodic sound and great technique. The first time one listens to Sultans of Swings is a positive shock.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=h0ffIJ7ZO4U" data-role="button" class="extLink">Sultans Of Swing</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=jhdFe3evXpk" data-role="button" class="extLink">Brothers In Arms</a>
+        </div>
+		<h4><a href="#page10" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page12" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page12" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>13.Tony Iommi</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The father of heavy metal. Took him some to get recognized as a guitarist, probably due to his hard sound (at least for the 70s).
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=IkbMd3Bygzs" data-role="button" class="extLink">Snowblind</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=riwxbh_n_WM" data-role="button" class="extLink">Heaven And Hell</a>
+        </div>
+		<h4><a href="#page11" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page13" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page13" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>14.Dave Gilmour</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Low profile guitarist, some of his work with Pink Floyd is exceptional.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=y7EpSirtf_E" data-role="button" class="extLink">Comfortably Numb</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=Ij2vdvL7dx4" data-role="button" class="extLink">On An Island</a>
+        </div>
+		<h4><a href="#page12" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page14" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page14" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>15.Robby Krieger</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Main contributor to The Doors success. He often had to play in a special way, since the group had no bassist.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=5KxN5jK4cvk" data-role="button" class="extLink">Waiting for the sun</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=XKgA_D6V1Uk" data-role="button" class="extLink">Riders On The Storm</a>
+        </div>
+		<h4><a href="#page13" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page15" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="page15" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>16.Muddy Waters</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Blues legend. Main influence for the British Blues scene of the 60s.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=MxwUOIlqhGA" data-role="button" class="extLink">Manish Boy</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=DsHFFIAzEpw" data-role="button" class="extLink">Rollin' Stone</a>
+        </div>
+		<h4><a href="#page14" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page16" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page16" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>17.Eddie Van Halen</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Although Van Hallen quickly moved towards FM Rock, Eddie’s talent is shown in their first records. He revolutionized the guitar technique (finger-tapping) and he was copied by many. 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=z_lwocmL9dQ" data-role="button" class="extLink">Eruption (live)</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=SuyvT8nFMLY" data-role="button" class="extLink">Ain't Talkin' 'Bout Love</a>
+        </div>
+		<h4><a href="#page15" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page17" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page17" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>18.Robert Johnson</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Early blues artist (during the 30s). He died young and was unknown until he was discovered by artists like Eric Clapton. 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=O8hqGu-leFc" data-role="button" class="extLink">Sweet Home Chicago</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=CRnzBm1wNFo" data-role="button" class="extLink">Rambling On My Mind</a>
+        </div>
+		<h4><a href="#page16" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page18" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page18" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>19.Mick Ronson</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  He was a perfect match for Bowie and they wrote great music together. He was also an active session musician.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=s2L4hL2IvUk" data-role="button" class="extLink">The Width of a Circle</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=5g6--QoPsDM" data-role="button" class="extLink">Moonage Daydream</a>
+        </div>
+		<h4><a href="#page17" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page19" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page19" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>20.Duane Allman</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Another one that died young. His talent is evident with Allman Brothers and with Derek and the Dominos (with Clapton).
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=CrdAyN8A5AU" data-role="button" class="extLink">Black Hearted Woman</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=MfbJ5clkI1k" data-role="button" class="extLink">Layla</a>
+        </div>
+		<h4><a href="#page18" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page20" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page20" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>21.Pete Townshend</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The Who was a great and influential group. Townshend’s guitar (especially his riffs) was a main reason for that. 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=6ZBhgZBjiLE" data-role="button" class="extLink">Baba O'riley</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=uswXI4fDYrM" data-role="button" class="extLink">My Generation</a>
+        </div>
+		<h4><a href="#page19" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page21" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="page21" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>22.Angus Young</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The crazy school boy of AC/DC.  Great riffs and (whenever he feels like it) great solos.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=Q8fZeaUHsjw" data-role="button" class="extLink">Whole Lotta Rosie</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=gEPmA3USJdI" data-role="button" class="extLink">Highway To Hell</a>
+        </div>
+		<h4><a href="#page20" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page22" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page22" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>23.Scotty Moore</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The guitarist of Elvis. That’s enough.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=bUD4vSv1ZsU" data-role="button" class="extLink">Jailhouse Rock</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=lzQ8GDBA8Is" data-role="button" class="extLink">Hound Dog</a>
+        </div>
+		<h4><a href="#page21" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page23" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page23" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>24.Rhandy Roads</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Yet another one that died (very) young. He managed to influence a lot of people during the few years that he played (mainly with Ozzy).
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=kOoGfcZs1RA" data-role="button" class="extLink">Suicide Solution</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=ZcoweoZ6jpM" data-role="button" class="extLink">Crazy Train</a>
+        </div>
+		<h4><a href="#page22" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page24" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page24" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>25.Alex Lifeson</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Rush is the best power trio, mainly due to Lifeson.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=nEVDZl5UvN4" data-role="button" class="extLink">Fly By Night</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=SEuOoMprDqg" data-role="button" class="extLink">Xanadu</a>
+        </div>
+		<h4><a href="#page23" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page25" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page47" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>49.Bonnie Raitt</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  One of the few really good female guitarists.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=6Mylo0piAgc" data-role="button" class="extLink">Pride And Joy</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=krF6LpUXODc" data-role="button" class="extLink">Thing Called Love</a>
+        </div>
+		<h4><a href="#page46" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page48" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page26" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>27.Eddie Hazel</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  His solo in Maggot Brain of Funkadelic alone is enough to put him here.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=dh3bleXWaCk" data-role="button" class="extLink">Maggot Brain</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=oVHrvx-Ua68" data-role="button" class="extLink">Super Stupid</a>
+        </div>
+		<h4><a href="#page25" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page27" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page27" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>28.Buddy Holly</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Another one in the long list of talents that died early. His short career shows what we miss.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=QzDzt9lGwhM" data-role="button" class="extLink">Peggy Sue</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=8LY3faFr58U" data-role="button" class="extLink">Oh Boy!</a>
+        </div>
+		<h4><a href="#page26" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page28" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page28" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>29.John Lee Hooker</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  One more blues legend, influenced many. He played the guitar literally until his last day.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=wSnQ0bdHW0s" data-role="button" class="extLink">Boom! Boom!</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=Co176zfUykE" data-role="button" class="extLink">Hobo Blues</a>
+        </div>
+		<h4><a href="#page27" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page29" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+
+
+<div data-role="page" id="page29" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>30.Jerry Garcia</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The Grateful Dead was a special group. Garcia’s sound was the main reason.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=AX9Vhv4akxc" data-role="button" class="extLink">Peggy O</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=amLungGziP0" data-role="button" class="extLink">Whiskey In The Jar</a>
+        </div>
+		<h4><a href="#page28" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page30" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page30" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>31.Yngwie Malmsteen</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Underestimated guitarist, he is not usually included in the best guitarists’ lists. Which is strange, since he is one of the technically most advanced guitarists, he has a unique sound and a successful decade (80s). 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=XNOa5Gjh2lc" data-role="button" class="extLink">Black Star</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=6Jy_LpWpO8s" data-role="button" class="extLink">Requiem</a>
+        </div>
+		<h4><a href="#page29" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page31" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page31" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>32.Ron Asheton</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The Stooges are regarded as the grandparents of punk, mainly due to his guitar. 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=xTkqpC3z3_Q" data-role="button" class="extLink">I Wanna Be Your Dog</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=vvRkJzVQBP0" data-role="button" class="extLink">No Fun</a>
+        </div>
+		<h4><a href="#page30" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page32" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page32" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>33.Allen Collins-Gary Rossington</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The guitarists of Lynyrd Skynyrd during the first and best (before the crash) period of the group. 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=hMHjjvLjtAM" data-role="button" class="extLink">Free bird</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=CABsgXUyClE" data-role="button" class="extLink">Simple man</a>
+        </div>
+		<h4><a href="#page31" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page33" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page33" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>34.Stevie Ray Vaughan</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Exceptional blues guitarist of the newer generation. Yet another early death.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+         <a href="http://www.youtube.com/watch?v=tWLw7nozO_U" data-role="button" class="extLink">Texas Flood</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=sF2ZqlPNuqU" data-role="button" class="extLink">Voodoo Child</a>
+        </div>
+		<h4><a href="#page32" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page34" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page34" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>35.Yannis Spathas</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  You probably don’t know him, because he was born in Greece. If he was from England, he would be in the top-10. Some great work with Socrates Drank the Conium during the 70s.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=QNFEZRYVOMU" data-role="button" class="extLink">Mountains</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=-hdtnhx3660" data-role="button" class="extLink">Starvation</a>
+        </div>
+		<h4><a href="#page33" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page35" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page35" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>36.John Sykes</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Tygers of Pan Tang, Thin Lizzy, Whitesnake. Great work in all circumstances, especially with Whitesnake where he was responsible for the creation of the sound that made them succeed.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=257lYZK_Gvw" data-role="button" class="extLink">Love Don't Stay</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=3A-R4qbSzYk" data-role="button" class="extLink">Crying In The Rain</a>
+        </div>
+		<h4><a href="#page34" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page72" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page72" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>37.JJ Cale</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The definition of cool. Eric Clapton made him famous, since Cale is very low-profile. All of his work is great.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=uGtUNelJf94" data-role="button" class="extLink">After Midnight</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=l8uk7vlk0sE" data-role="button" class="extLink">Call Me The Breeze</a>
+        </div>
+		<h4><a href="#page35" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page36" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+
+
+<div data-role="page" id="page36" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>38.Slash</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  He was great in Guns 'n' Roses. Unfortunately they didn’t last long. He also did some nice work afterwards.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=1w7OgIMMRc4" data-role="button" class="extLink">Sweet Child O' Mine</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=Rbm6GXllBiw" data-role="button" class="extLink">Paradise City</a>
+        </div>
+		<h4><a href="#page35" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page37" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page37" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>39.Jack White</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The White Stripes was a great group. Jack White is a very good guitarist.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=0J2QdDbelmY" data-role="button" class="extLink">Seven Nation Army</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=H4rYaLBUpLA" data-role="button" class="extLink">Jolene</a>
+        </div>
+		<h4><a href="#page36" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page38" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page38" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>40.Prince</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Prince has a lot of talents. One of them is playing the guitar (although his guitar work is usually “hidden” in his music).
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=XfpkbjDwpsY" data-role="button" class="extLink">Crazy</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=6SFNW5F8K9Y" data-role="button" class="extLink">While My Guitar...</a>
+        </div>
+		<h4><a href="#page37" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page39" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page39" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>41.B.B. King</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The King of the Blues. 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=_4GfRQSE-Ak" data-role="button" class="extLink">The Thrill is Gone</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=sQQ_vl47CGc" data-role="button" class="extLink">I Believe To My Soul</a>
+        </div>
+		<h4><a href="#page38" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page40" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page40" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>42.Ry Cooder</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Slide guitar master, he also played for the Rolling Stones for some time.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=28XK3V3ACzc" data-role="button" class="extLink">Crossroads</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=ftRMqJaAFyI" data-role="button" class="extLink">Feelin' Bad Blues</a>
+        </div>
+		<h4><a href="#page39" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page41" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page41" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>43.Mike Campbell</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Tom Petty's lead guitarist for more than 40 years. Low-profile, high capability.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=Y1D3a5eDJIs" data-role="button" class="extLink">Runnin' Down a Dream</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=qNxfPAF1frM" data-role="button" class="extLink">Breakdown</a>
+        </div>
+		<h4><a href="#page40" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page42" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page42" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>44.Steve Jones</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Well, he is not one of the most skilled guitarists, however Sex Pistols’ raw power can  be credited to him.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=yqrAPOZxgzU" data-role="button" class="extLink">God Save The Queen</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=q31WY0Aobro" data-role="button" class="extLink">Anarchy in the UK</a>
+        </div>
+		<h4><a href="#page41" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page43" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page43" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>45.Kirk Hammett</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  With his work (among others), Metalica moved away from thrash and became a great rock band.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=dHUHxTiPFUU" data-role="button" class="extLink">Wherever I May Roam</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=l3EryN4stwQ" data-role="button" class="extLink">Fade to Black</a>
+        </div>
+		<h4><a href="#page42" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page44" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page44" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>46.Johnny Marr</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Another low-profile musician. He was great with The Smiths, but also in his later work with other artists.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=k5CltsEN8DQ" data-role="button" class="extLink">Bigmouth Strikes Again</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=eW2cNGs5wnk" data-role="button" class="extLink">The Right Stuff</a>
+        </div>
+		<h4><a href="#page43" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page45" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page45" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>47.The Edge</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  His signature sound helped U2 become a super group.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=EM4vblG6BVQ" data-role="button" class="extLink">Sunday Bloody Sunday</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=GzZWSrr5wFI" data-role="button" class="extLink">Where The Streets...</a>
+        </div>
+		<h4><a href="#page44" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page46" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page46" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>48.Mike Bloomfield</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The guitarist that helped Dylan go electric. Great at playing the blues, too.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=smRXnyUWktg" data-role="button" class="extLink">Drinking Wine</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=iSVuEjvLjFE" data-role="button" class="extLink">Long Distance</a>
+        </div>
+		<h4><a href="#page45" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page47" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page25" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>26.Bo Diddley</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Another guitar legend, he played a decisive role in the transition from blues to rock (the originator). 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=WOOFx9c6qyA" data-role="button" class="extLink">Road Runner</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=prLQSAXJCeg" data-role="button" class="extLink">Who Do You Love</a>
+        </div>
+		<h4><a href="#page24" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page26" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page48" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>50.Robert Fripp</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  His work with King Crimson is characteristic. So is his guitar in David Bowie’s Heroes.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=-6_B6zhENrQ" data-role="button" class="extLink">21st Century Schizoid Man</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=Tgcc5V9Hu3g" data-role="button" class="extLink">Heroes</a>
+        </div>
+		<h4><a href="#page47" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page49" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page49" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>51.Kurt Cobain</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Not very skilled, but the “dirty” sound of Nirvana was revolutionary at the time.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=hTWKbfoikeg" data-role="button" class="extLink">Smells Like Teen Spirit</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=pkcJEvMcnEg" data-role="button" class="extLink">Lithium</a>
+        </div>
+		<h4><a href="#page48" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page50" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page50" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>52.John Frusciante</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Very nice work with Red Hot Chili Peppers.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=JvYvsawlMNs" data-role="button" class="extLink">Dani California</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=LG2DGDndKmg" data-role="button" class="extLink">Under The Bridge</a>
+        </div>
+		<h4><a href="#page49" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page51" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page51" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>53.Peter Green</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Very important blues guitarist. Unfortunately, mental problems prevented his evolution.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=GWkqACt1Xi8" data-role="button" class="extLink">Black Magic Woman</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=O8RhZDGLEXM" data-role="button" class="extLink">Oh Well</a>
+        </div>
+		<h4><a href="#page50" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page52" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page52" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>54.Gary Moore</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  He was very good playing both blues and hard rock, with great solos. 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=nGb1xCm5VJo" data-role="button" class="extLink">Emerald</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=VkFunXTcsoA" data-role="button" class="extLink">She's My Baby</a>
+        </div>
+		<h4><a href="#page51" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page53" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page53" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>55.Gus G</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	   He would be higher in the list if he was born 20 years earlier. However, it’s not a little thing to play for Ozzy. 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=nDO_IaixvKU" data-role="button" class="extLink">Head Up High</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=JT_xgmKlLis" data-role="button" class="extLink">Paranoid</a>
+        </div>
+		<h4><a href="#page52" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page54" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page54" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>56.Adrian Smith-Dave Murray</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The lead guitars of Iron Maiden. Smith is better in composing. 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=J3I88wsFKao" data-role="button" class="extLink">Flight of Icarus</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=ry42FHfz67A" data-role="button" class="extLink">Stranger in a Strange Land</a>
+        </div>
+		<h4><a href="#page53" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page55" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page55" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>57.Lindsey Buckingham</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  He was mainly responsible for the commercial and artistic success of Fleetwood Mac.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=qNM6IuA87eM" data-role="button" class="extLink">Go Your Own Way</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=v1iuSmZHcwY" data-role="button" class="extLink">The Chain</a>
+        </div>
+		<h4><a href="#page54" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page56" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page56" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>58.Uli Roth</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  One of the first contributors to the neo-classical guitar genre. Very important work with the Scorpions (70s).
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=nDNXCIQyd04" data-role="button" class="extLink">Sails Of Charon</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=iX3eocQSpvI" data-role="button" class="extLink">We'll Burn The Sky</a>
+        </div>
+		<h4><a href="#page55" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page57" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page57" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>59.Andy Summers</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Sting is the famous one from The Police, but Summers contributed a lot to their success.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=MbXWrmQW-OE" data-role="button" class="extLink">Message In A Bottle</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=o5FPPoLqkCk" data-role="button" class="extLink">Synchronicity II</a>
+        </div>
+		<h4><a href="#page56" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page58" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page58" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>60.Joe Perry</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Very nice work with Aerosmith, especially during the 70s.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=sZfZ8uWaOFI" data-role="button" class="extLink">Dream On</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=82cJgPXU-ik" data-role="button" class="extLink">Sweet Emotion</a>
+        </div>
+		<h4><a href="#page57" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page59" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page59" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>61.Jan Akkerman</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  He is famous for Hocus Pocus (by Focus). However he has played other stuff too (e.g. jazz).
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=NGaVUApDVuY" data-role="button" class="extLink">Hocus Pocus</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=OznS7X9BOxs" data-role="button" class="extLink">Sylvia</a>
+        </div>
+		<h4><a href="#page58" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page60" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page60" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>62.Johnny Ramone</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The Ramones opened the path for punk.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=F3J0iwwsq-w" data-role="button" class="extLink">Pet Sematary</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=5-xfyn2wcGc" data-role="button" class="extLink">Somebody Put...</a>
+        </div>
+		<h4><a href="#page59" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page61" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page61" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>63.Zakk Wylde</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  He has been working with Ozzy for many years. He has contributed to some great records.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=_hBpkCQDprU" data-role="button" class="extLink">Miracle Man</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=CprfjfN5PRs" data-role="button" class="extLink">No More Tears</a>
+        </div>
+		<h4><a href="#page60" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page62" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page62" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>64.Michael Schenker</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Great guitarist, his talent was evident during his UFO years. Unfortunately, personal problems (alcohol) didn’t let him do his best.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=aP5ikQpTR3c" data-role="button" class="extLink">Rock Bottom</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=p7u93cEeawQ" data-role="button" class="extLink">Coast To Coast</a>
+        </div>
+		<h4><a href="#page61" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page63" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page63" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>65.Robbie Robertson</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	 Lead member of The Band, played with Dylan and made some very good personal records.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=s7TApfjpGVE" data-role="button" class="extLink">Showdown At Big Sky</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=iMB_NpsGkyY" data-role="button" class="extLink">Who Do You Love</a>
+        </div>
+		<h4><a href="#page62" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page64" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page64" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>66.Marty Friedman</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Megadeth is one of the few good thrash metal groups, helped by Friedman.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=6u1YmHkVNMc" data-role="button" class="extLink">Little Wing</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=4tzWc3Xl4B0" data-role="button" class="extLink">Hangar 18</a>
+        </div>
+		<h4><a href="#page63" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page65" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page65" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>67.Glenn Tipton-K.K. Downing</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The lead guitars duo of Judas Priest.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=mxwtk74ApDU" data-role="button" class="extLink">Rocka Rolla</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=L397TWLwrUU" data-role="button" class="extLink">Breaking The Law</a>
+        </div>
+		<h4><a href="#page64" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page66" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page66" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>68.Dimebag Darrell</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The driving force of Pantera, he established Groove metal. He was murdered during a concert of Damageplan.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=7C0zl8hv6xc" data-role="button" class="extLink">Fucking Hostile</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=E_WZkCgeXWk" data-role="button" class="extLink">Cowboys from Hell</a>
+        </div>
+		<h4><a href="#page65" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page67" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page67" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>69.Tom Morello</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  An important member of Rage Against the Machine and Audioslave (both great groups).
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=AVS55EzWTMs" data-role="button" class="extLink">Your Time Has Come</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=QNzIKoAy2pk" data-role="button" class="extLink">Killing In The Name</a>
+        </div>
+		<h4><a href="#page66" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page68" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page68" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>70.Tommy Bolin</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  He died (overdose) before becoming very well known. His short participation in Deep Purple (Mk 4) shows his talent.  
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=UQHPieD34Ww" data-role="button" class="extLink">Keep On Moving</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=5DBzlLWGHtE" data-role="button" class="extLink">Post Toastee</a>
+        </div>
+		<h4><a href="#page67" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page69" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page69" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>71.Billy Gibbons</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Nice guitarist, especially during the first years of ZZ-Top.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=-h2hox--bR8" data-role="button" class="extLink">La Grange</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=-jB_QM73Slk" data-role="button" class="extLink">Tush</a>
+        </div>
+		<h4><a href="#page68" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> <a href="#page70" data-icon="arrow-r" data-role="button" data-theme="e">Next</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page70" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>72.Lita Ford</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Menu</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	
+	
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Underestimated, maybe because she was very beautiful and very sexy during the time of her success. However, she is a very good  guitarist in a man’s world (hard rock).
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Listen:
+        <a href="http://www.youtube.com/watch?v=tcCPNHIwRK8" data-role="button" class="extLink">Wasted</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=jchhHNh0QrA" data-role="button" class="extLink">Out For Blood</a>
+        </div>
+		<h4><a href="#page69" data-icon="arrow-l" data-role="button" data-theme="e">Previous</a> </h4>
+	</div>
+	
+	</div>
+	
+</div>
+
+
+
+</body>
+</html>

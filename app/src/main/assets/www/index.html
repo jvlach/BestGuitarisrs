@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>71+1 καλύτεροι κιθαρίστες</title>
+<style>
+.mymaindiv { color:#000000; font-weight:bold;background-color:#F8F8F8;vertical-align: bottom;}
+.mymaindivred { color:#C00000 ;font-weight:bold;}
+.mymaindivyellow { color:#FFFF99 ;font-weight:bold;}
+.myvideolink{background:#000000;}
+.myfooter{position:fixed;
+bottom:0px;
+}
+
+.mywrapper{width=100%;right:0px;left:0px}
+</style>
+<link href="jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script>
+//ads:
+//place our admob ad unit id here
+var admobid = {};
+if( /(android)/i.test(navigator.userAgent) ) {
+  admobid = { // for Android
+    banner: 'ca-app-pub-9423408255527730/2146869400',
+    interstitial: 'ca-app-pub-9423408255527730/1301803003'
+  };
+}
+
+
+function initAd(){
+    AdMob.setOptions({
+      adSize: 'SMART_BANNER',
+      // width: integer, // valid when set adSize 'CUSTOM'
+      // height: integer, // valid when set adSize 'CUSTOM'
+      position: AdMob.AD_POSITION.BOTTOM_CENTER,
+      // offsetTopBar: false, // avoid overlapped by status bar, for iOS7+
+      bgColor: 'black', // color name, or '#RRGGBB'
+      // x: integer,    // valid when set position to 0 / POS_XY
+      // y: integer,    // valid when set position to 0 / POS_XY
+      isTesting: false, // set to true, to receiving test ad for testing purpose
+      // autoShow: true // auto show interstitial ad when loaded, set to false if prepare/show
+    });
+}
+    
+
+    function createSelectedBanner(){
+    	//alert( 'admob plugin ' );
+      AdMob.createBanner({
+        adId: admobid.banner,
+        overlap: false,
+        offsetTopBar: true,
+        adSize: 'SMART_BANNER',
+        position: 8,
+      });
+    }
+
+    function showBannerAtPosition(){
+      AdMob.showBanner( 8 );
+    }
+
+    //ads:END
+
+$(document).ready(function(){
+	
+	$("#page").css("background-image", "url(images/guitar.jpg)");
+	$("#page3menu").css("background-image", "url(images/guitar.jpg)");
+	
+	$("#page4menu").css("background-image", "url(images/guitar2.jpg)");
+	$("#page71").css("background-image", "url(images/page71.jpg)");
+	$("#page1").css("background-image", "url(images/page1.jpg)");
+	$("#page2").css("background-image", "url(images/page2.jpg)");
+	$("#page3").css("background-image", "url(images/page3.jpg)");
+	
+	$("#page4").css("background-image", "url(images/page4.jpg)");
+	$("#page5").css("background-image", "url(images/page5.jpg)");
+	$("#page6").css("background-image", "url(images/page6.jpg)");
+	$("#page7").css("background-image", "url(images/page7.jpg)");
+	$("#page8").css("background-image", "url(images/page8.jpg)");
+	$("#page9").css("background-image", "url(images/page9.jpg)");
+	$("#page10").css("background-image", "url(images/page10.jpg)");
+	$("#page11").css("background-image", "url(images/page11.jpg)");
+	$("#page12").css("background-image", "url(images/page12.jpg)");
+	$("#page13").css("background-image", "url(images/page13.jpg)");
+	$("#page14").css("background-image", "url(images/page14.jpg)");
+	$("#page15").css("background-image", "url(images/page15.jpg)");
+	$("#page16").css("background-image", "url(images/page16.jpg)");
+	$("#page17").css("background-image", "url(images/page17.jpg)");
+	$("#page18").css("background-image", "url(images/page18.jpg)");
+	$("#page19").css("background-image", "url(images/page19.jpg)");
+	$("#page20").css("background-image", "url(images/page20.jpg)");
+	
+	$("#page21").css("background-image", "url(images/page21.jpg)");
+	$("#page22").css("background-image", "url(images/page22.jpg)");
+	$("#page23").css("background-image", "url(images/page23.jpg)");
+	$("#page24").css("background-image", "url(images/page24.jpg)");
+	$("#page25").css("background-image", "url(images/page25.jpg)");
+	$("#page26").css("background-image", "url(images/page26.jpg)");
+	$("#page27").css("background-image", "url(images/page27.jpg)");
+	$("#page28").css("background-image", "url(images/page28.jpg)");
+	$("#page29").css("background-image", "url(images/page29.jpg)");
+	$("#page30").css("background-image", "url(images/page30.jpg)");
+	
+	$("#page31").css("background-image", "url(images/page31.jpg)");
+	$("#page32").css("background-image", "url(images/page32.jpg)");
+	$("#page33").css("background-image", "url(images/page33.jpg)");
+	$("#page34").css("background-image", "url(images/page34.jpg)");
+	$("#page35").css("background-image", "url(images/page35.jpg)");
+	$("#page36").css("background-image", "url(images/page36.jpg)");
+	$("#page37").css("background-image", "url(images/page37.jpg)");
+	$("#page38").css("background-image", "url(images/page38.jpg)");
+	$("#page39").css("background-image", "url(images/page39.jpg)");
+	$("#page40").css("background-image", "url(images/page40.jpg)");
+	
+	$("#page41").css("background-image", "url(images/page41.jpg)");
+	$("#page42").css("background-image", "url(images/page42.jpg)");
+	$("#page43").css("background-image", "url(images/page43.jpg)");
+	$("#page44").css("background-image", "url(images/page44.jpg)");
+	$("#page45").css("background-image", "url(images/page45.jpg)");
+	$("#page46").css("background-image", "url(images/page46.jpg)");
+	$("#page47").css("background-image", "url(images/page47.jpg)");
+	$("#page48").css("background-image", "url(images/page48.jpg)");
+	$("#page49").css("background-image", "url(images/page49.jpg)");
+	$("#page50").css("background-image", "url(images/page50.jpg)");
+	
+	$("#page51").css("background-image", "url(images/page51.jpg)");
+	$("#page52").css("background-image", "url(images/page52.jpg)");
+	$("#page53").css("background-image", "url(images/page53.jpg)");
+	$("#page54").css("background-image", "url(images/page54.jpg)");
+	$("#page55").css("background-image", "url(images/page55.jpg)");
+	$("#page56").css("background-image", "url(images/page56.jpg)");
+	$("#page57").css("background-image", "url(images/page57.jpg)");
+	$("#page58").css("background-image", "url(images/page58.jpg)");
+	$("#page59").css("background-image", "url(images/page59.jpg)");
+	$("#page60").css("background-image", "url(images/page60.jpg)");
+	
+	$("#page61").css("background-image", "url(images/page61.jpg)");
+	$("#page62").css("background-image", "url(images/page62.jpg)");
+	$("#page63").css("background-image", "url(images/page63.jpg)");
+	$("#page64").css("background-image", "url(images/page64.jpg)");
+	$("#page65").css("background-image", "url(images/page65.jpg)");
+	$("#page66").css("background-image", "url(images/page66.jpg)");
+	$("#page67").css("background-image", "url(images/page67.jpg)");
+	$("#page68").css("background-image", "url(images/page68.jpg)");
+	$("#page69").css("background-image", "url(images/page69.jpg)");
+	$("#page70").css("background-image", "url(images/page70.jpg)");
+	
+	$("#page72").css("background-image", "url(images/page72.jpg)");//jj cale
+	
+	//$("#footer1").css("position", "fixed");
+	//$("#footer1").css("bottom", "0");
+	//$.mobile.activePage.children('[data-role="footer"]').css("position", "fixed");
+	//$.mobile.activePage.children('[data-role="footer"]').css("bottom", "0");
+	
+	//to change all at once:
+	//$("[id^=footer]").css("position", "fixed");
+	//$("[id^=footer]").css("bottom", "0");
+	
+	$("[id^=wrapper]").css("position", "fixed");
+	$("[id^=wrapper]").css("bottom", "0");
+	
+	
+	$("#comment").css("background", "#F8F8F8");
+	$.mobile.page.prototype.options.backBtnText = "Πίσω";
+	
+	$(".extLink").click( function(event){
+		event.preventDefault();
+		var elem = $(this);
+        var url = elem.attr('href');
+        if (url.indexOf('http://') !== -1) {
+           //alert("kookoo");
+        	var ref = window.open(url, '_system');
+        }
+		//var ref = window.open('http://www.stackoverflow.com/', '_system')
+		//on('click'
+	});
+	
+});
+
+//$("#page3").live( 'pageinit',function(event){
+//	$.mobile.activePage.children('[data-role="footer"]').css("position", "fixed");
+//	$.mobile.activePage.children('[data-role="footer"]').css("bottom", "0");
+//	});
+
+ function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+        //alert( 'admob plugin' );
+        //ads:
+        if (! AdMob) { return; }
+
+        initAd();
+
+        // display a banner at startup
+        createSelectedBanner();
+        showBannerAtPosition();
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		if($.mobile.activePage.is('#page')){
+      setTimeout( function() {navigator.app.exitApp();}, 100 );
+
+    }
+    else {
+        setTimeout( function() {$.mobile.changePage("#page");}, 100 );
+
+    }
+    }
+
+</script>
+</head>
+<body  onload="onLoad()" >
+
+<div id="page" data-role="page" data-theme="b">
+<p></p>
+	<div data-role="header">
+		Οι καλύτεροι κιθαρίστες
+	</div>
+    <p></p>
+
+	<div data-role="content">
+		<ul data-role="listview">
+			<li><a href="#page71">Από το 1 στο 72</a></li>
+
+            <li><a href="#page3menu">Λίστα</a></li>
+      
+			<li><a href="#page4menu">Άλλες λίστες</a></li>
+		</ul>
+	</div>
+    <br>
+    <div data-role="collapsible-set">
+      <div id="comment" data-role="collapsible" data-theme="c">
+        <h3>Σχόλιο</h3>
+        <p>Η λίστα αυτή προέκυψε αποκλειστικά από τις προσωπικές μου απόψεις και μουσικές προτιμήσεις.</p>
+      </div>
+      
+    </div>
+
+	  <!-- <div data-role="footer" id="footer1">
+		rtet
+	</div> -->
+</div>
+
+
+
+<div data-role="page" id="page3menu" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Η λίστα:</h1>
+	</div>
+    <!-- <p><div><a href="#page" data-icon="arrow-l" data-role="button" data-theme="e">Πίσω</a></div></p> -->
+	<div data-role="content">
+		<ol data-role="listview">
+			<li><a href="#page71">Jimi Hendrix</a></li>
+<li><a href="#page1">Chuck Berry</a></li>
+<li><a href="#page2">Jeff Beck</a></li>
+<li><a href="#page3">Eric Clapton</a></li>
+<li><a href="#page4">Rory Gallagher</a></li>
+<li><a href="#page5">Jimmy Page</a></li>
+<li><a href="#page6">Santana</a></li>
+<li><a href="#page7">Ritchie Blackmore</a></li>
+<li><a href="#page8">Brian May</a></li>
+<li><a href="#page9">Dave Davies</a></li>
+<li><a href="#page10">Frank Zappa</a></li>
+<li><a href="#page11">Mark Knopfler</a></li>
+<li><a href="#page12">Tony Iommi</a></li>
+<li><a href="#page13">Dave Gilmour</a></li>
+<li><a href="#page14">Robby Krieger</a></li>
+<li><a href="#page15">Muddy Waters</a></li>
+<li><a href="#page16">Eddie Van Halen</a></li>
+<li><a href="#page17">Robert Johnson</a></li>
+<li><a href="#page18">Mick Ronson</a></li>
+<li><a href="#page19">Duane Allman</a></li>
+<li><a href="#page20">Pete Townshend</a></li>
+<li><a href="#page21">Angus Young</a></li>
+<li><a href="#page22">Scotty Moore</a></li>
+<li><a href="#page23">Rhandy Roads</a></li>
+<li><a href="#page24">Alex Lifeson</a></li>
+<li><a href="#page25">Bo Diddley</a></li>
+<li><a href="#page26">Eddie Hazel</a></li>
+<li><a href="#page27">Buddy Holly</a></li>
+<li><a href="#page28">John Lee Hooker</a></li>
+<li><a href="#page29">Jerry Garcia</a></li>
+<li><a href="#page30">Yngwie Malmsteen</a></li>
+<li><a href="#page31">Ron Asheton</a></li>
+<li><a href="#page32">Allen Collins-Gary Rossington</a></li>
+<li><a href="#page33">Stevie Ray Vaughan</a></li>
+<li><a href="#page34">Γιάννης Σπάθας</a></li>
+<li><a href="#page35">John Sykes</a></li>
+<li><a href="#page72">JJ Cale</a></li>
+<li><a href="#page36">Slash</a></li>
+<li><a href="#page37">Jack White</a></li>
+<li><a href="#page38">Prince</a></li>
+<li><a href="#page39">B.B. King</a></li>
+<li><a href="#page40">Ry Cooder</a></li>
+<li><a href="#page41">Mike Campbell</a></li>
+<li><a href="#page42">Steve Jones</a></li>
+<li><a href="#page43">Kirk Hammett</a></li>
+<li><a href="#page44">Johnny Marr</a></li>
+<li><a href="#page45">The Edge</a></li>
+<li><a href="#page46">Mike Bloomfield</a></li>
+<li><a href="#page47">Bonnie Raitt</a></li>
+<li><a href="#page48">Robert Fripp</a></li>
+<li><a href="#page49">Kurt Cobain</a></li>
+<li><a href="#page50">John Frusciante</a></li>
+<li><a href="#page51">Peter Green</a></li>
+<li><a href="#page52">Gary Moore</a></li>
+<li><a href="#page53">Gus G</a></li>
+<li><a href="#page54">Adrian Smith-Dave Murray</a></li>
+<li><a href="#page55">Lindsey Buckingham</a></li>
+<li><a href="#page56">Uli Roth</a></li>
+<li><a href="#page57">Andy Summers</a></li>
+<li><a href="#page58">Joe Perry</a></li>
+<li><a href="#page59">Jan Akkerman</a></li>
+<li><a href="#page60">Johnny Ramone</a></li>
+<li><a href="#page61">Zakk Wylde</a></li>
+<li><a href="#page62">Michael Schenker</a></li>
+<li><a href="#page63">Robbie Robertson</a></li>
+<li><a href="#page64">Marty Friedman</a></li>
+<li><a href="#page65">Glenn Tipton-K.K. Downing</a></li>
+<li><a href="#page66">Dimebag Darrell</a></li>
+<li><a href="#page67">Tom Morello</a></li>
+<li><a href="#page68">Tommy Bolin</a></li>
+<li><a href="#page69">Billy Gibbons</a></li>
+<li><a href="#page70">Lita Ford</a></li>
+
+		</ol>
+	</div>
+    <p><div><a href="#page" data-icon="arrow-l" data-role="button" data-theme="e">Πίσω</a></div></p>
+	<!--  <div data-role="footer" id="footer1">
+		<h4> <a href="http://jv-mobile.blogspot.gr/">Γιάννης Βλάχος</a></h4>
+	</div>-->
+</div>
+
+<div data-role="page" id="page4menu" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Άλλες λίστες:</h1>
+	</div>
+    <!-- <p><div><a href="#page" data-icon="arrow-l" data-role="button" data-theme="e">Πίσω</a></div></p> -->
+	<div data-role="content">
+		<ul data-role="listview" data-theme="c">
+        <li><a href="http://www.rollingstone.com/music/lists/100-greatest-guitarists-20111123">Rolling Stone: 100 Greatest Guitarists of all time</a></li>
+        <li><a href="http://www2.gibson.com/News-Lifestyle/Features/en-us/Top-50-Guitarists-528.aspx">Gibson.com: Top 50 Guitarists of All Time</a></li>
+			<li><a href="http://www.gigwise.com/news/40852/The-50-Greatest-Guitarists-Ever">GigWise: The 50 Greatest Guitarists... Ever!</a></li>
+
+            <li><a href="http://www.digitaldreamdoor.com/pages/best_guitar-all.html">Digitaldreamdoor: 100 Greatest Guitarists (All Genres)</a></li>
+
+		</ul>
+	</div>
+    <p><div><a href="#page" data-icon="arrow-l" data-role="button" data-theme="e">Πίσω</a></div></p>
+	<!--  <div data-role="footer" id="footer1">
+		<h4> <a href="http://jv-mobile.blogspot.gr/">Γιάννης Βλάχος</a></h4>
+	</div>-->
+</div>
+
+
+
+
+<!--  pages:-->
+
+<div data-role="page" id="page71" data-add-back-btn="true"><!-- style="FILTER: alpha(opacity=10);opacity:0.1;" -->
+
+	<div data-role="header">
+		<h1>1.Jimi Hendrix</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71" class="mymaindiv" data-id="my"  style="FILTER: alpha(opacity=50);opacity:0.5;">
+		Σε οποιαδήποτε λίστα με καλύτερους κιθαρίστες και να κοιτάξεις, ο Hendrix είναι το νούμερο 1. Και δεν είναι τυχαίο, μιας και πραγματικά το παίξιμό του ήταν από άλλο πλανήτη. Επηρέασε (άμεσα ή έμμεσα) τους πάντες μετά από αυτόν και έθεσε τις βάσεις για ό,τι ακολούθησε. Δυστυχώς πέθανε πολύ νέος.
+        
+        
+        
+	</div>
+	  <div data-role="footer" id="footer1" data-theme="d">
+	 <div  align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=EX5phFmbrU8" class="extLink" data-role="button">Hear My Train A Comin'</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=TLV4_xaYynY" class="extLink" data-role="button">All Along The Watchtower</a>
+        </div> 
+		<div align="center"><a href="#page1" data-icon="arrow-r" data-role="button" data-theme="e" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></div>
+	</div>
+	</div>
+	
+</div>
+
+<div data-role="page" id="page1" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>2.Chuck Berry</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my"  style="FILTER: alpha(opacity=50);opacity:0.5;">
+	
+		Ο πρώτος που έπαιξε πραγματικό ροκ, πέρα από τα μπλουζ. Άνοιξε το δρόμο για τη συνέχεια και έγραψε καταπληκτικά τραγούδια. Δύσκολος χαρακτήρας, απ' ότι λένε όσοι τον γνώρισαν, αλλά φοβερός κιθαρίστας.
+		
+        <!--  Ακούστε:<BR>
+        <a href="http://www.youtube.com/watch?v=6ofD9t_sULM" class="myvideolink">Johnny B. Goode</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=p0HmFr7mPsk" class="myvideolink">Maybellene</a>
+        
+        -->
+        
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=I8JULmUlGDA" class="extLink" data-role="button">Johnny B. Goode</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=8RAfxiyMKAk" class="extLink" data-role="button">Maybellene</a>
+        </div>
+		<div align="center"><a href="#page71" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page2" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></div>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>3.Jeff Beck</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+		Ξεκίνησε μαζί με τον Clapton, αλλά δεν έγινε ποτέ super star. Δεν έμεινε σταθερός σε ένα μουσικό είδος, αλλά εξερεύνησε πολλά και διάφορα. Είναι τεχνικά άρτιος και μάλιστα έκανε πολλά  πράγματα πρώτος. Συνέχισε να φτιάχνει σημαντικούς δίσκους
+		 (αν και όχι ιδιαίτερα πετυχημένους εμπορικά) όταν άλλοι δεν είχαν πια ιδέες.
+        
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=Vuj5toLeyY8" data-role="button" class="extLink">Beck's Bolero</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=5ZBeerUD-zc" data-role="button" class="extLink">Futher On Up The Road (με Eric Clapton)</a>
+        </div>
+		<div align="center"><a href="#page1" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page3" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></div>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page3" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>4.Eric Clapton</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+		Προφανώς από τους σημαντικότερους κιθαρίστες της ροκ, ιδίως στα πρώτα χρόνια της καριέρας του. Αγαπάει πολύ τα μπλουζ και τα χρησιμοποίησε ως βάση για να εξελίξει τον ήχο της κιθάρας.
+		 Επίσης, είναι εν πολλοίς υπεύθυνος γαι τη γνωριμία μας με τον JJ Cale αλλά και τον Bob Marley.
+        
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=oDs2Bkq6UU4" class="extLink" data-role="button">While My Guitar Gently Weeps</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=8OLK_HSyy1U" data-role="button" class="extLink">Crossroads (1968)</a>
+        </div>
+		<h4><a href="#page2" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page4" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page4" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>5.Rory Gallagher</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+		Άλλος ένας εκπληκτικός κιθαρίστας, ο οποίος δεν έγινε σούπερ σταρ επειδή δεν το θέλησε (ίσως δεν ήταν και εύκολος στις συνεργασίες).
+	Όλη η δουλειά του είναι πολύ υψηλού επιπέδου. Δυστυχώς, πέθανε κι αυτός σχετικά νωρίς.   
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=gyHymAxUVrc" class="extLink" data-role="button">Moonchild</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=WlEQOmGISHM" class="extLink" data-role="button">Philby</a>
+        </div>
+		<h4><a href="#page3" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page5" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page5" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>6.Jimmy Page</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+		Δε χρειάζονται και πολλά λόγια για τον Page. Έγραψε ιστορία με τους Led Zeppelin (κυρίως).  
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=JOemwDVBlqE" class="extLink" data-role="button">Stairway to Heaven</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=73dvrir5kig" class="extLink" data-role="button">Kashmir</a>
+        </div>
+		<h4><a href="#page4" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page6" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page6" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>7.Santana</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+		Ο κιθαρίστας που πάντρεψε τη ροκ με τη λάτιν μουσική. Εξαιρετικά ικανός και με ένα μοναδικό, γλυκό ήχο. 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=95kCv10duFw" class="extLink" data-role="button">Black Magic Woman</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=WzSayxVM_E0" class="extLink" data-role="button">Samba Pa Ti</a>
+        </div>
+		<h4><a href="#page5" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page7" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page7" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>8.Ritchie Blackmore</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	Ίσως ο καλύτερος στα σόλο. Απ' τους πρωτεργάτες του νεοκλασσικού ρεύματος στην κιθάρα και με εκπληκτική δουλειά τόσο στους Deep Purple όσο και στους Rainbow.
+	 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=AUtHC9L2CdI" class="extLink" data-role="button">Highway Star</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=dqM5L5JQseI" class="extLink" data-role="button">Lazy</a>
+        </div>
+		<h4><a href="#page6" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page8" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	
+	</div>
+</div>
+
+
+
+<div data-role="page" id="page8" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>9.Brian May</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	 Με μοναδικό ήχο, μελωδικός αλλά και σκληρός όταν χρειάζεται, μεγαλούργησε στους Queen.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=qu7mWsLCfiI" class="extLink" data-role="button">Crazy Little Thing Called Love</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=T8Rfb1Jtmic" class="extLink" data-role="button">Stone Cold Crazy</a>
+        </div>
+		<h4><a href="#page7" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page9" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+
+
+<div data-role="page" id="page9" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>10.Dave Davies</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Οι Κinks κατά πολλούς έθεσαν τις βάσεις για το hard rock και ο Dave Davies είναι ο κύριος λόγος για αυτό.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=-2GmzyeeXnQ" class="extLink" data-role="button">You Really Got Me</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=F4DV-5d6a5g" class="extLink" data-role="button">All Day and All of the Night</a>
+        </div>
+		<h4><a href="#page8" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page10" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+
+
+<div data-role="page" id="page10" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>11.Frank Zappa</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Τρομερό μουσικό ταλέντο και ξεχωριστή προσωπικότητα, ο τρελός (ή έτσι έδειχνε) Zappa ήταν επίσης 
+	  εξαιρετικός κιθαρίστας με διάθεση για πειραματισμό.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=FzZohsi0nXc" class="extLink" data-role="button">Black Napkins</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=Dp6LT2MdaPI" class="extLink" data-role="button">Cosmik Debris</a>
+        </div>
+		<h4><a href="#page9" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page11" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="page11" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>12.Mark Knopfler</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Ο μοναδικός, μελωδικός ήχος της κιθάρας του και η εξαιρετική του τεχνική τον κατατάσσουν στους σημαντικότερους κιθαρίστες. 
+	  Η πρώτη φορά που ακούει κανείς το Sultans of swing είναι ένα πραγματικό (θετικό) σοκ. 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=h0ffIJ7ZO4U" data-role="button" class="extLink">Sultans Of Swing</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=jhdFe3evXpk" class="extLink" data-role="button">Brothers In Arms</a>
+        </div>
+		<h4><a href="#page10" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page12" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page12" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>13.Tony Iommi</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Ο πατέρας του heavy metal. Άργησε να αναγνωριστεί, ακριβώς λόγω του δύσκολου (τη δεκαετία του 70 τουλάχιστον) 
+	 ήχου του.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=IkbMd3Bygzs" data-role="button" class="extLink">Snowblind</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=riwxbh_n_WM" class="extLink" data-role="button">Heaven And Hell</a>
+        </div>
+		<h4><a href="#page11" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page13" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page13" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>14.Dave Gilmour</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Χαμηλών τόνων κιθαρίστας αλλά με τρομερές ικανότητες, τις οποίες έδειξε με τον καλύτερο τρόπο στους Pink Floyd.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=y7EpSirtf_E" data-role="button" class="extLink">Comfortably Numb</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=Ij2vdvL7dx4" class="extLink" data-role="button">On An Island</a>
+        </div>
+		<h4><a href="#page12" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page14" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page14" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>15.Robby Krieger</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Βασικός παράγοντας της επιτυχίας των Doors (έγραψε και πολλά τραγούδια τους), έπαιζε πολλές φορές με ιδιαίτερο τρόπο ώστε να καλύψει και την 
+	  έλλειψη μπάσου στο συγκρότημα.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=5KxN5jK4cvk" data-role="button" class="extLink">Waiting for the sun</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=XKgA_D6V1Uk" class="extLink" data-role="button">Riders On The Storm</a>
+        </div>
+		<h4><a href="#page13" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page15" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="page15" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>16.Muddy Waters</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Ένας από τους θρύλους των μπλουζ. Ήταν βασική επιρροή για την έκρηξη του βρετανικού μπλουζ τη δεκαετία του 60. 
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=MxwUOIlqhGA" data-role="button" class="extLink">Manish Boy</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=DsHFFIAzEpw" class="extLink" data-role="button">Rollin' Stone</a>
+        </div>
+		<h4><a href="#page14" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page16" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page16" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>17.Eddie Van Halen</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Αν και οι Van Halen ολίσθησαν γρήγορα προς το FM Rock, το ταλέντο του Eddie Van Halen φαίνεται στους πρώτους δίσκους τους. Έφερε επανάσταση στην τεχνική της κιθάρας (finger-tapping). Η τεχνική του αντιγράφηκε από πολλούς.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=z_lwocmL9dQ" class="extLink" data-role="button">Eruption (live)</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=SuyvT8nFMLY" class="extLink" data-role="button">Ain't Talkin' 'Bout Love</a>
+        </div>
+		<h4><a href="#page15" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page17" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page17" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>18.Robert Johnson</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Πρώιμος μπλουζ καλλιτέχνης (δεκαετία του 30), πέθανε νέος και ήταν άγνωστος για δεκαετίες έως ότου αναγνωρίστηκε η αξία του από κιθαρίστες όπως ο Clapton (το Crossroads είναι δικό του).
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=O8hqGu-leFc" data-role="button" class="extLink">Sweet Home Chicago</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=CRnzBm1wNFo" class="extLink" data-role="button">Rambling On My Mind</a>
+        </div>
+		<h4><a href="#page16" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page18" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page18" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>19.Mick Ronson</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Μαζί με τον Bowie έφτιαξαν καταπληκτικούς δίσκους και ταίριαξαν απόλυτα. Επίσης ήταν πολύ ενεργός session μουσικός.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=s2L4hL2IvUk" data-role="button" class="extLink">The Width of a Circle</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=5g6--QoPsDM" class="extLink" data-role="button">Moonage Daydream</a>
+        </div>
+		<h4><a href="#page17" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page19" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page19" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>20.Duane Allman</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Άλλος ένας πρόωρα χαμένος κιθαρίστας. Το ταλέντο του φαίνεται στη δουλειά των Allman Brothers αλλά και των  Derek and the Dominos μαζί με τον Clapton.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=CrdAyN8A5AU" data-role="button" class="extLink">Black Hearted Woman</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=MfbJ5clkI1k" class="extLink" data-role="button">Layla</a>
+        </div>
+		<h4><a href="#page18" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page20" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page20" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>21.Pete Townshend</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Κανείς δε μπορεί να αμφισβητήσει την αξία και επιρροή των The Who. Η κιθαριστική δουλειά του Townshend (ιδίως τα riffs του) ήταν ο σημαντικότερος παράγοντας.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=6ZBhgZBjiLE" data-role="button" class="extLink">Baba O'riley</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=uswXI4fDYrM" class="extLink" data-role="button">My Generation</a>
+        </div>
+		<h4><a href="#page19" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page21" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="page21" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>22.Angus Young</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Το τρελό σχολιαρόπαιδο των ACDC. Θαυμάσια riff και, όταν θέλει, θαυμάσια σόλο.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=Q8fZeaUHsjw" data-role="button" class="extLink">Whole Lotta Rosie</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=gEPmA3USJdI" class="extLink" data-role="button">Highway To Hell</a>
+        </div>
+		<h4><a href="#page20" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page22" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page22" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>23.Scotty Moore</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Ο κιθαρίστας του Elvis. Αυτό από μόνο του τα λέει όλα.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=bUD4vSv1ZsU" class="extLink" data-role="button">Jailhouse Rock</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=lzQ8GDBA8Is" class="extLink" data-role="button">Hound Dog</a>
+        </div>
+		<h4><a href="#page21" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page23" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page23" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>24.Rhandy Roads</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Άλλος ένας αδικοχαμένος καλλιτέχνης. Στα λίγα χρόνια που δημιούργησε (κυρίως στους δύο δίσκους με τον Ozzy) πρόλαβε να επηρεάσει πολλούς.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=kOoGfcZs1RA" data-role="button" class="extLink">Suicide Solution</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=ZcoweoZ6jpM" data-role="button" class="extLink">Crazy Train</a>
+        </div>
+		<h4><a href="#page22" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page24" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page24" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>25.Alex Lifeson</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Οι Rush είναι ίσως το κορυφαίο power trio. Βασικός λόγος γι'αυτό είναι η κιθάρα του Lifeson.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=nEVDZl5UvN4" data-role="button" class="extLink">Fly By Night</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=SEuOoMprDqg" data-role="button" class="extLink">Xanadu</a>
+        </div>
+		<h4><a href="#page23" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page25" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page47" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>49.Bonnie Raitt</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Όχι ιδιαίτερα αγαπητή στην Ελλάδα, μιας και ο ήχος της είναι αρκετά Αμερικάνικος. Πάντως, η Raitt είναι η κορυφαία (και μία από τις ελάχιστες) καθαρίστριες στο χώρο της σύγχρονης μουσικής.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=6Mylo0piAgc" data-role="button" class="extLink">Pride And Joy</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=krF6LpUXODc" data-role="button" class="extLink">Thing Called Love</a>
+        </div>
+		<h4><a href="#page46" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page48" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page26" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>27.Eddie Hazel</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Και μόνο το σόλο του στο Maggot Brain των Funkadelic αρκεί για να βρίσκεται εδώ.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=dh3bleXWaCk" data-role="button" class="extLink">Maggot Brain</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=oVHrvx-Ua68" data-role="button" class="extLink">Super Stupid</a>
+        </div>
+		<h4><a href="#page25" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page27" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page27" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>28.Buddy Holly</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Άλλος ένας αδικοχαμένος καλλιτέχνης. Στη σύντομη καριέρα του πρόλαβε να δείξει το ταλέντο του και ως κιθαρίστας.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=QzDzt9lGwhM" data-role="button" class="extLink">Peggy Sue</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=8LY3faFr58U" data-role="button" class="extLink">Oh Boy!</a>
+        </div>
+		<h4><a href="#page26" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page28" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page28" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>29.John Lee Hooker</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Άλλος ένας θρύλος των blues, ο οποίος έπαιζε κιθάρα κυριολεκτικά μέχρι την τελευταία μέρα. Επηρέασε κι αυτός πολλούς.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=wSnQ0bdHW0s" data-role="button" class="extLink">Boom! Boom!</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=Co176zfUykE" data-role="button" class="extLink">Hobo Blues</a>
+        </div>
+		<h4><a href="#page27" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page29" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+
+
+<div data-role="page" id="page29" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>30.Jerry Garcia</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Οι Grateful Dead αποτελούν μια ξεχωριστή περίπτωση στη ροκ μουσική και η κιθάρα του Garcia είναι βασικός λόγος γι'αυτό.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=AX9Vhv4akxc" data-role="button" class="extLink">Peggy O</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=amLungGziP0" data-role="button" class="extLink">Whiskey In The Jar</a>
+        </div>
+		<h4><a href="#page28" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page30" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page30" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>31.Yngwie Malmsteen</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Υποτιμημένος κιθαρίστας, ο οποίος συνήθως δε συμπεριλαμβάνεται στις λίστες με τους καλύτερους κιθαρίστες. Πράγμα περίεργο δεδομένου ότι είναι από τους καλύτερους τεχνικά κιθαρίστες, έχει μοναδικό ήχο και είχε και μία δυνατή δημιουργικά δεκαετία (80s).
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=XNOa5Gjh2lc" data-role="button" class="extLink">Black Star</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=6Jy_LpWpO8s" data-role="button" class="extLink">Requiem</a>
+        </div>
+		<h4><a href="#page29" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page31" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page31" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>32.Ron Asheton</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Οι Stooges θεωρούνται οι παππούδες του punk και προφανώς ο ήχος της κιθάρας του Asheton είναι ένας βασικός λόγος.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=xTkqpC3z3_Q" data-role="button" class="extLink">I Wanna Be Your Dog</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=vvRkJzVQBP0" data-role="button" class="extLink">No Fun</a>
+        </div>
+		<h4><a href="#page30" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page32" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page32" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>33.Allen Collins-Gary Rossington</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Το κιθαριστικό δίδυμο των Lynyrd Skynyrd κατά την πρώτη και κορυφαία (προ δυστυχήματος) περίοδο του συγκροτήματος.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=hMHjjvLjtAM" data-role="button" class="extLink">Free bird</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=CABsgXUyClE" data-role="button" class="extLink">Simple man</a>
+        </div>
+		<h4><a href="#page31" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page33" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page33" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>34.Stevie Ray Vaughan</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Και άλλος ένας που έφυγε νωρίς. Εξαιρετικός blues κιθαρίστας, πολύ καλός συνθέτης επίσης.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=tWLw7nozO_U" data-role="button" class="extLink">Texas Flood</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=sF2ZqlPNuqU" data-role="button" class="extLink">Voodoo Child</a>
+        </div>
+		<h4><a href="#page32" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page34" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page34" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>35.Γιάννης Σπάθας</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Αν είχε γεννηθεί στο εξωτερικό θα ήταν στην πρώτη δεκάδα. Ακόμα κι έτσι κατάφερε να κάνει θαυμάσια δουλειά στους Socrates.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=QNFEZRYVOMU" data-role="button" class="extLink">Mountains</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=-hdtnhx3660" data-role="button" class="extLink">Starvation</a>
+        </div>
+		<h4><a href="#page33" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page35" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page35" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>36.John Sykes</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Tygers of Pan Tang, Thin Lizzy, Whitesnake. Έκανε θαυμάσια δουλειά σε όλες τις περιπτώσεις, ειδικά στους Whitesnake, όπου ήταν ο κύριος υπεύθυνος για τη δημιουργία του ήχου που τους οδήγησε στη μεγάλη επιτυχία.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=257lYZK_Gvw" data-role="button" class="extLink">Love Don't Stay</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=3A-R4qbSzYk" data-role="button" class="extLink">Crying In The Rain</a>
+        </div>
+		<h4><a href="#page34" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page72" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+
+<div data-role="page" id="page72" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>37.JJ Cale</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Ο ορισμός του cool. Έγινε ευρέως γνωστός κυρίως λόγω του Clapton, με τον οποίο συνεργάζονται συχνά, μιας και ο ίδιος είναι πολύ χαμηλών τόνων. Το σύνολο της δουλειάς του είναι πολύ καλό.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=uGtUNelJf94" data-role="button" class="extLink">After Midnight</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=l8uk7vlk0sE" data-role="button" class="extLink">Call Me The Breeze</a>
+        </div>
+		<h4><a href="#page35" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page36" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+
+
+<div data-role="page" id="page36" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>38.Slash</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Στους Guns 'n' Roses φάνηκε πλήρως το ταλέντο του. Δυστυχώς, διαλύθηκαν νωρίς. Και στη συνέχεια η δουλειά του είναι πολύ καλή.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=1w7OgIMMRc4" data-role="button" class="extLink">Sweet Child O' Mine</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=Rbm6GXllBiw" data-role="button" class="extLink">Paradise City</a>
+        </div>
+		<h4><a href="#page35" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page37" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page37" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>39.Jack White</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Οι White Stripes είναι ένα από τα λίγα πραγματικά μεγάλα νεώτερα συγκροτήματα της ροκ. Ο White κατάφερε να αφομοιώσει τη δουλειά των παλαιότερων στην κιθάρα και να προσθέσει το προσωπικό του στυλ.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=0J2QdDbelmY" data-role="button" class="extLink">Seven Nation Army</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=H4rYaLBUpLA" data-role="button" class="extLink">Jolene</a>
+        </div>
+		<h4><a href="#page36" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page38" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page38" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>40.Prince</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Ανάμεσα στα πολλά (συνθέτης,τραγουδιστής κ.ά.) ο Prince είναι και εξαιρετικός κιθαρίστας αν και πολλές φορές η κιθάρα του είναι "κρυμμένη".
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=XfpkbjDwpsY" data-role="button" class="extLink">Crazy</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=6SFNW5F8K9Y" data-role="button" class="extLink">While My Guitar...</a>
+        </div>
+		<h4><a href="#page37" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page39" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page39" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>41.B.B. King</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  The King of the Blues. Θρύλος των blues, όπως και οι άλλοι του είδους του επηρέασε σημαντικά τους κιθαρίστες της ροκ, ενώ έγραψε και κλασσικά μπλουζ.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=_4GfRQSE-Ak" data-role="button" class="extLink">The Thrill is Gone</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=sQQ_vl47CGc" data-role="button" class="extLink">I Believe To My Soul</a>
+        </div>
+		<h4><a href="#page38" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page40" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page40" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>42.Ry Cooder</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Ένας από τους καλύτερους στη slide κιθάρα, έπαιξε και στους Rolling Stones.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=28XK3V3ACzc" data-role="button" class="extLink">Crossroads</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=ftRMqJaAFyI" data-role="button" class="extLink">Feelin' Bad Blues</a>
+        </div>
+		<h4><a href="#page39" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page41" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page41" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>43.Mike Campbell</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Ο μόνιμος κιθαρίστας του Tom Petty. Χαμηλών τόνων, αλλά μεγάλων ικανοτήτων.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=Y1D3a5eDJIs" data-role="button" class="extLink">Runnin' Down a Dream</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=qNxfPAF1frM" data-role="button" class="extLink">Breakdown</a>
+        </div>
+		<h4><a href="#page40" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page42" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page42" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>44.Steve Jones</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Ο κιθαρίστας των Sex Pistols. Προφανώς δεν είναι απ'τους ικανότερους τεχνικά αλλά η ωμή δύναμη του punk των Sex Pistols οφείλεται κατά πολύ σε αυτόν.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=yqrAPOZxgzU" data-role="button" class="extLink">God Save The Queen</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=q31WY0Aobro" data-role="button" class="extLink">Anarchy in the UK</a>
+        </div>
+		<h4><a href="#page41" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page43" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page43" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>45.Kirk Hammett</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Οι Metalica ξέφυγαν γρήγορα από το thrash για να γίνουν ένα από τα μεγαλύτερα ροκ γκρουπ, χάρη και στη δουλειά του Hammet.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=dHUHxTiPFUU" data-role="button" class="extLink">Wherever I May Roam</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=l3EryN4stwQ" data-role="button" class="extLink">Fade to Black</a>
+        </div>
+		<h4><a href="#page42" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page44" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page44" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>46.Johnny Marr</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Άλλος ένας χαμηλών τόνων καλλιτέχνης. Εξαιρετικός στους Smiths αλλά και στη μετέπειτα δουλειά του με διάφορους καλλιτέχνες.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=k5CltsEN8DQ" data-role="button" class="extLink">Bigmouth Strikes Again</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=eW2cNGs5wnk" data-role="button" class="extLink">The Right Stuff</a>
+        </div>
+		<h4><a href="#page43" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page45" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page45" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>47.The Edge</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Κιθαρίστας με χαρακτηριστικό ήχο, που συνέβαλε σημαντικά στην επιτυχία (καλλιτεχνική και εμπορική) των U2.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=EM4vblG6BVQ" data-role="button" class="extLink">Sunday Bloody Sunday</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=GzZWSrr5wFI" data-role="button" class="extLink">Where The Streets...</a>
+        </div>
+		<h4><a href="#page44" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page46" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page46" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>48.Mike Bloomfield</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Ο κιθαρίστας που εισήγαγε τον Dylan στην ηλεκτρική εποχή. Επίσης, εξαιρετικός μπλουζ κιθαρίστας.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=smRXnyUWktg" data-role="button" class="extLink">Drinking Wine</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=iSVuEjvLjFE" data-role="button" class="extLink">Long Distance</a>
+        </div>
+		<h4><a href="#page45" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page47" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page25" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>26.Bo Diddley</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Άλλος ένας θρύλος της κιθάρας, έπαιξε καθοριστικό ρόλο στη μετάβαση από τα μπλουζ στο ροκ (the originator). Είχε και καταπληκτική κιθάρα.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=WOOFx9c6qyA" data-role="button" class="extLink">Road Runner</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=prLQSAXJCeg" data-role="button" class="extLink">Who Do You Love</a>
+        </div>
+		<h4><a href="#page24" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page26" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page48" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>50.Robert Fripp</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Χαρακτηριστική η δουλειά του στους King Crimson. Το ίδιο και στο Heroes του Bowie στο οποίο παίζει κιθάρα.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=y4eRpwRJgzk" data-role="button" class="extLink">21st Century Schizoid Man</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=Tgcc5V9Hu3g" data-role="button" class="extLink">Heroes</a>
+        </div>
+		<h4><a href="#page47" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page49" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page49" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>51.Kurt Cobain</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Δεν ήταν από τους ικανότερους κιθαρίστες, όμως ο βρώμικος ήχος των Nirvana ήταν επαναστατικός για την εποχή του.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=hTWKbfoikeg" data-role="button" class="extLink">Smells Like Teen Spirit</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=pkcJEvMcnEg" data-role="button" class="extLink">Lithium</a>
+        </div>
+		<h4><a href="#page48" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page50" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page50" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>52.John Frusciante</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Πολύ σημαντικό συγκρότημα οι Red Hot Chili Peppers με ωραία κιθάρα από τον Frusciante.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=JvYvsawlMNs" data-role="button" class="extLink">Dani California</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=LG2DGDndKmg" data-role="button" class="extLink">Under The Bridge</a>
+        </div>
+		<h4><a href="#page49" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page51" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page51" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>53.Peter Green</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Πολύ σπουδαίος blues κιθαρίστας. Δυστυχώς ταλαιπωρήθηκε από προβλήματα ψυχιατρικής φύσης που εμπόδισαν την πορεία του.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=GWkqACt1Xi8" data-role="button" class="extLink">Black Magic Woman</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=O8RhZDGLEXM" data-role="button" class="extLink">Oh Well</a>
+        </div>
+		<h4><a href="#page50" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page52" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page52" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>54.Gary Moore</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Πολύ καλός τόσο στα μπλουζ όσο και στο hard rock, με ιδιαίτερη έφεση στα σόλο. Πέθανε πρόσφατα, σε όχι πολύ μεγάλη ηλικία.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=nGb1xCm5VJo" data-role="button" class="extLink">Emerald</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=VkFunXTcsoA" data-role="button" class="extLink">She's My Baby</a>
+        </div>
+		<h4><a href="#page51" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page53" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page53" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>55.Gus G</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Ο δικός μας Gus G θα ήταν ψηλότερα αν είχε γεννηθεί καμιά 20αριά χρόνια νωρίτερα. Παρ'όλα αυτά τα καταφέρνει αρκετά καλά και σήμερα.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=nDO_IaixvKU" data-role="button" class="extLink">Head Up High</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=JT_xgmKlLis" data-role="button" class="extLink">Paranoid</a>
+        </div>
+		<h4><a href="#page52" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page54" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page54" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>56.Adrian Smith-Dave Murray</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Αποτέλεσαν το κορυφαίο δίδυμο των lead guitars των Iron Maiden. Ο Smith συμμετείχε περισσότερο στη σύνθεση.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=J3I88wsFKao" data-role="button" class="extLink">Flight of Icarus</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=ry42FHfz67A" data-role="button" class="extLink">Stranger in a Strange Land</a>
+        </div>
+		<h4><a href="#page53" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page55" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page55" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>57.Lindsey Buckingham</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Βασικός συντελεστής της μεγάλης εμπορικής και καλλιτεχνικής επιτυχίας των Fleetwood Mac, με πολύ ωραία δουλειά στην κιθάρα.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=qNM6IuA87eM" data-role="button" class="extLink">Go Your Own Way</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=v1iuSmZHcwY" data-role="button" class="extLink">The Chain</a>
+        </div>
+		<h4><a href="#page54" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page56" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page56" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>58.Uli Roth</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Από τους πρωτεργάτες του νεοκλασικού ρεύματος, με σημαντικότατη δουλειά κατά τη συμμετοχή του στους Scorpions (δεκαετία του 70).
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=nDNXCIQyd04" data-role="button" class="extLink">Sails Of Charon</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=iX3eocQSpvI" data-role="button" class="extLink">We'll Burn The Sky</a>
+        </div>
+		<h4><a href="#page55" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page57" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page57" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>59.Andy Summers</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Μπορεί ο πιο διάσημος από τους Police να είναι ο Sting, όμως η κιθάρα του Summers έπαιξε σημαντικό ρόλο στη δημιουργία του χαρακτηριστικού ήχου τους.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=MbXWrmQW-OE" data-role="button" class="extLink">Message In A Bottle</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=o5FPPoLqkCk" data-role="button" class="extLink">Synchronicity II</a>
+        </div>
+		<h4><a href="#page56" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page58" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page58" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>60.Joe Perry</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Σημαντική η δουλειά του στους Aerosmith, ειδικά κατά τη δεκαετία του 70.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=sZfZ8uWaOFI" data-role="button" class="extLink">Dream On</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=82cJgPXU-ik" data-role="button" class="extLink">Sweet Emotion</a>
+        </div>
+		<h4><a href="#page57" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page59" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page59" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>61.Jan Akkerman</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Σίγουρα έχετε ακούσει το Hocus Pocus των Focus. Ο Akkerman έχει κάνει και πολλά άλλα μπλέκοντας και άλλα είδη μουσικής (π.χ. jazz).
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=NGaVUApDVuY" data-role="button" class="extLink">Hocus Pocus</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=OznS7X9BOxs" data-role="button" class="extLink">Sylvia</a>
+        </div>
+		<h4><a href="#page58" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page60" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page60" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>62.Johnny Ramone</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Ούτε αυτός ήταν ιδιαίτερα σπουδαίος από τεχνικής πλευράς, αλλά οι Ramones άνοιξαν το δρόμο για το 
+punk με τις κιθάρες τους.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=F3J0iwwsq-w" data-role="button" class="extLink">Pet Sematary</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=5-xfyn2wcGc" data-role="button" class="extLink">Somebody Put...</a>
+        </div>
+		<h4><a href="#page59" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page61" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page61" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>63.Zakk Wylde</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Ο σχεδόν μόνιμος κιθαρίστας του Ozzy εδώ και πολλά χρόνια. Μαζί του έχει κυκλοφορήσει πολλούς θαυμάσιους δίσκους.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=_hBpkCQDprU" data-role="button" class="extLink">Miracle Man</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=CprfjfN5PRs" data-role="button" class="extLink">No More Tears</a>
+        </div>
+		<h4><a href="#page60" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page62" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page62" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>64.Michael Schenker</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Μεγάλος κιθαρίστας, το ταλέντο του φάνηκε κυρίως στους UFO. Προσωπικά προβλήματα (αλκοολισμός) δεν του επέτρεψαν να κάνει ακόμα περισσότερα.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=aP5ikQpTR3c" data-role="button" class="extLink">Rock Bottom</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=p7u93cEeawQ" data-role="button" class="extLink">Coast To Coast</a>
+        </div>
+		<h4><a href="#page61" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page63" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page63" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>65.Robbie Robertson</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	 Βασικό στέλεχος των The Band, έπαιξε με τον Dylan στις αρχές της ηλεκτρικής του σταδιοδρομίας, ενώ έκανε και αρκετούς καλούς προσωπικούς δίσκους.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=s7TApfjpGVE" data-role="button" class="extLink">Showdown At Big Sky</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=iMB_NpsGkyY" data-role="button" class="extLink">Who Do You Love</a>
+        </div>
+		<h4><a href="#page62" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page64" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page64" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>66.Marty Friedman</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Καίρια η συνεισφορά του ώστε οι Megadeth να είναι ένα από τα λίγα σημαντικά thrash metal γκρουπ.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=6u1YmHkVNMc" data-role="button" class="extLink">Little Wing</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=4tzWc3Xl4B0" data-role="button" class="extLink">Hangar 18</a>
+        </div>
+		<h4><a href="#page63" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page65" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page65" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>67.Glenn Tipton-K.K. Downing</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Το άλλο μεγάλο δίδυμο στις lead κιθάρες στο heavy metal είναι αυτό των Judas Priest.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=mxwtk74ApDU" data-role="button" class="extLink">Rocka Rolla</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=L397TWLwrUU" data-role="button" class="extLink">Breaking The Law</a>
+        </div>
+		<h4><a href="#page64" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page66" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page66" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>68.Dimebag Darrell</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Η κινητήρια δύναμη πίσω από τους Pantera, το παίξιμό του οδήγησε στη δημιουργία του Groove metal. Δολοφονήθηκε σε συναυλία των Damageplan.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=7C0zl8hv6xc" data-role="button" class="extLink">Fucking Hostile</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=E_WZkCgeXWk" data-role="button" class="extLink">Cowboys from Hell</a>
+        </div>
+		<h4><a href="#page65" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page67" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page67" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>69.Tom Morello</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Τόσο οι Rage Against the Machine όσο και οι Audioslave είναι κορυφαία συγκροτήματα, με την κιθάρα του Morello σε πρώτο πλάνο.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=AVS55EzWTMs" data-role="button" class="extLink">Your Time Has Come</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=QNzIKoAy2pk" data-role="button" class="extLink">Killing In The Name</a>
+        </div>
+		<h4><a href="#page66" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page68" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page68" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>70.Tommy Bolin</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Πέθανε από ναρκωτικά πριν προλάβει να γίνει πολύ γνωστός. Η σύντομη συμμετοχή του στους Deep Purple δείχνει τις ικανότητές του.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=UQHPieD34Ww" data-role="button" class="extLink">Keep On Moving</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=5DBzlLWGHtE" data-role="button" class="extLink">Post Toastee</a>
+        </div>
+		<h4><a href="#page67" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page69" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page69" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>71.Billy Gibbons</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Ωραίος κιθαρίστας, ιδίως στην πρώτη, πιο blues περίοδο των ZZ Top.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=-h2hox--bR8" data-role="button" class="extLink">La Grange</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=-jB_QM73Slk" data-role="button" class="extLink">Tush</a>
+        </div>
+		<h4><a href="#page68" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> <a href="#page70" data-icon="arrow-r" data-role="button" data-theme="e">Επόμενος</a></h4>
+	</div>
+	</div>
+</div>
+<div data-role="page" id="page70" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>72.Lita Ford</h1>
+		<a href="#page" data-icon="home" class="ui-btn-right">Μενού</a>
+	</div>
+	<div id = "wrapper" class="mywrapper">
+	
+	
+	<div data-role="content" id="maindiv71"  class="mymaindiv" data-id="my" style="FILTER: alpha(opacity=50);opacity:0.5;">
+	  Υποτιμημένη καλλιτέχνιδα, ίσως γιατί την περίοδο της επιτυχίας της ήταν πολύ όμορφη και αρκετά προκλητική. Είναι πάντως μία από τις ελάχιστες καθαρίστριες που μπορεί να τα βάλει στα ίσα με τους άνδρες συναδέλφους της.
+	</div>
+	<div data-role="footer" id="footer1" data-theme="d">
+	<div align="center">Ακούστε:
+        <a href="http://www.youtube.com/watch?v=tcCPNHIwRK8" data-role="button" class="extLink">Wasted</a>&nbsp;&nbsp;<a href="http://www.youtube.com/watch?v=jchhHNh0QrA" data-role="button" class="extLink">Out For Blood</a>
+        </div>
+		<h4><a href="#page69" data-icon="arrow-l" data-role="button" data-theme="e">Προηγούμενος</a> </h4>
+	</div>
+	
+	</div>
+	
+</div>
+
+
+
+</body>
+</html>

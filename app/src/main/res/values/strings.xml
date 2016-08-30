@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, PhonegapDemoActivity!</string>
+    <string name="app_name">71+1 best guitarists</string>
+    
+    <string name="ad_unit_id">ca-app-pub-9423408255527730/2146869400</string>
+	<string name="ad_unit_id_inter">ca-app-pub-9423408255527730/1301803003</string>
+	
+</resources>

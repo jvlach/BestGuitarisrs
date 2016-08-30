@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\j.vlachos\\AndroidStudioProjects\\BestGuitarists\\app\\build\\intermediates\\res\\merged\\debug\\xml\\plugins.xml",
+        "source": "C:\\Users\\j.vlachos\\AndroidStudioProjects\\BestGuitarists\\app\\src\\main\\res\\xml\\plugins.xml"
+    },
+    {
+        "merged": "C:\\Users\\j.vlachos\\AndroidStudioProjects\\BestGuitarists\\app\\build\\intermediates\\res\\merged\\debug\\xml\\config.xml",
+        "source": "C:\\Users\\j.vlachos\\AndroidStudioProjects\\BestGuitarists\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "C:\\Users\\j.vlachos\\AndroidStudioProjects\\BestGuitarists\\app\\build\\intermediates\\res\\merged\\debug\\xml\\cordova.xml",
+        "source": "C:\\Users\\j.vlachos\\AndroidStudioProjects\\BestGuitarists\\app\\src\\main\\res\\xml\\cordova.xml"
+    }
+]
