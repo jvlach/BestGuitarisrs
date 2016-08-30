@@ -1,4 +1,4 @@
-# BestGuitarisrs
+# BestGuitarists
 An Android app with Cordova
 
 This is a list of the 72 best guitarists of rock, based on my personal preferences.
